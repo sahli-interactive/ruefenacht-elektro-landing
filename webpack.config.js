@@ -1,6 +1,12 @@
 const path = require('path');
+const glob = require('glob');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
+
+const PATHS = {
+  src: path.join(__dirname, 'assets')
+}
 
 module.exports = {
   entry: './assets/index.js',
@@ -83,7 +89,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               outputPath: (url, resourcePath, context) => {
-                if (/icon\.png|tile\.png|tile-wide\.png/.test(resourcePath)) {
+                if (/android-chrome-192x192\.png|android-chrome-512x512\.png|apple-touch-icon\.png|favicon-16x16\.png|favicon-32x32\.png|mstile-150x150\.png|safari-pinned-tab\.svg/.test(resourcePath)) {
                   return url;
                 }
                 else {
@@ -104,6 +110,14 @@ module.exports = {
             },
           }
         ],
+        exclude: /node_modules/,
+      },
+      {
+        test: /(_redirects)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name]',
+        },
         exclude: /node_modules/,
       },
       {
@@ -145,6 +159,9 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: './css/styles.css'
+    }),
+    new PurgecssPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
     }),
   ]
 };

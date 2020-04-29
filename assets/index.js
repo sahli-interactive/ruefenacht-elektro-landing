@@ -9,12 +9,12 @@ import './favicon.ico'
 
 // Web App Manifest
 import './site.webmanifest'
-import './icon.png'
+// import './icon.png'
 
 // Tiles for Windows 8.1
 import './browserconfig.xml'
-import './tile.png'
-import './tile-wide.png'
+// import './tile.png'
+// import './tile-wide.png'
 
 // robots.txt
 import './robots.txt'
