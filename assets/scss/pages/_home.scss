@@ -1,0 +1,75 @@
+// -----------------------------------------------------------------------------
+// Home page
+// -----------------------------------------------------------------------------
+.text-orange {
+  color: $orange;
+}
+
+.btn-primary {
+  color: $white;
+  font-weight: 600;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.fluid-height {
+  height: 100%;
+}
+
+p {
+  color: $gray-400;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &.lead {
+    line-height: 1.2
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.form-control {
+  border: 0;
+
+  &::placeholder {
+    color: $gray-600;
+    opacity: 1;
+  }
+}
+
+
+  label,
+  .input-group-text {
+    min-width: 100px;
+  background: $white;
+  border: 0;
+  color: black;
+  font-weight: 600;
+  }
+
+  .form-control:focus {
+    outline: 0;
+    border: 0 none;
+    box-shadow: none;
+  }
+
+.labelfocus {
+  color: $primary;
+}
+
+@include media-breakpoint-down(md) {
+  .notification {}
+  .input-group {
+    flex-direction: column;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}

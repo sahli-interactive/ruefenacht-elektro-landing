@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// Basic styles
+// -----------------------------------------------------------------------------
+
+// example:
+// https://github.com/HugoGiraudel/sass-boilerplate/blob/master/stylesheets/base/_base.scss
+
+html,
+body {
+  font-size: 18px;
+}
+
+@include media-breakpoint-down(md) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
