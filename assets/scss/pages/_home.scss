@@ -36,6 +36,7 @@ a:hover {
 
 .form-control {
   border: 0;
+  padding-left: 0;
 
   &::placeholder {
     color: $gray-600;
