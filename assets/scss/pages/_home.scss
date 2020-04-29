@@ -1,6 +1,10 @@
 // -----------------------------------------------------------------------------
 // Home page
 // -----------------------------------------------------------------------------
+body {
+  min-height: 100vh;
+}
+
 .text-orange {
   color: $orange;
 }
@@ -71,6 +75,11 @@ a:hover {
   color: $primary;
 }
 
+.service {
+  background: $gray-900;
+}
+
+
 @include media-breakpoint-down(md) {
   .notification {}
   .input-group {
@@ -79,5 +88,9 @@ a:hover {
 
   .btn-primary {
     width: 100%;
+  }
+
+  .service {
+    background: none;
   }
 }
