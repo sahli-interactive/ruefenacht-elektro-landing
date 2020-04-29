@@ -1,5 +1,6 @@
 // Vendors
 import './vendor/jquery'
+import 'popper.js'
 import './vendor/bootstrap'
 import './vendor/fontawesome'
 
@@ -8,3 +9,7 @@ $('form :input').focus(function() {
 }).blur(function() {
     $('label[for="' + this.id + '"]').removeClass('labelfocus');
 });
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
