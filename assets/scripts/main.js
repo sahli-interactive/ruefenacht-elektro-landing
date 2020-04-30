@@ -12,4 +12,4 @@ $('form :input').focus(function () {
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
-})
+});

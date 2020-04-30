@@ -162,6 +162,7 @@ module.exports = {
     }),
     new PurgecssPlugin({
       paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
+      whitelistPatternsChildren: [/^tooltip$/]
     }),
   ]
 };
