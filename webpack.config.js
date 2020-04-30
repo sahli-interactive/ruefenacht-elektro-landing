@@ -89,7 +89,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               outputPath: (url, resourcePath, context) => {
-                if (/android-chrome-192x192\.png|android-chrome-512x512\.png|apple-touch-icon\.png|favicon-16x16\.png|favicon-32x32\.png|mstile-150x150\.png|safari-pinned-tab\.svg/.test(resourcePath)) {
+                if (/android-chrome-72x72\.png|apple-touch-icon\.png|favicon-16x16\.png|favicon-32x32\.png|mstile-150x150\.png|safari-pinned-tab\.svg/.test(resourcePath)) {
                   return url;
                 }
                 else {
