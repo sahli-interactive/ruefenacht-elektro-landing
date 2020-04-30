@@ -72,6 +72,19 @@ a:hover {
   background: $gray-900;
 }
 
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  width: 0.75em;
+
+  &.fa-w-16 {
+    width: 1rem;
+  }
+}
+
 
 @include media-breakpoint-down(md) {
   .notification {}

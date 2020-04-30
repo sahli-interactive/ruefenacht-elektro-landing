@@ -2,7 +2,7 @@
 import './vendor/jquery'
 import '@popperjs/core'
 import './vendor/bootstrap'
-import './vendor/fontawesome'
+// import './vendor/fontawesome'
 
 $('form :input').focus(function () {
   $('label[for="' + this.id + '"]').addClass('labelfocus');
