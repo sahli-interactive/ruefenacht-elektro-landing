@@ -137,6 +137,14 @@ module.exports = {
         },
         exclude: /node_modules/,
       },
+      {
+        test: /(Stellenangebot\.pdf)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+        },
+        exclude: /node_modules/,
+      },
     ],
   },
   // DevServer
