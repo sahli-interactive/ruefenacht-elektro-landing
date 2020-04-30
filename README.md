@@ -1,100 +1,47 @@
-<img src="http://marcin.silversite.pl/html-starter-bs4-webpack/logo-small.png" width="150" height="58" alt="">
+# ruefenach-elektro-landing
 
-# HTML Starter
+Temporary landing-page for [ruefenacht-elektro.ch](https://www.ruefenacht-elektro.ch/)
 
-[![Bootstrap](https://flat.badgen.net/badge/bootstrap/4.3/7952b3)](https://getbootstrap.com)
-[![Webpack](https://flat.badgen.net/badge/webpack/4/14aaf3)](https://webpack.js.org)
-[![dependencies](https://flat.badgen.net/david/dep/cichy380/html-starter-bs4-webpack)](https://david-dm.org/cichy380/html-starter-bs4-webpack)
-[![devDependencies](https://flat.badgen.net/david/dev/cichy380/html-starter-bs4-webpack)](https://david-dm.org/cichy380/html-starter-bs4-webpack?type=dev)
-[![license](https://flat.badgen.net/github/license/cichy380/html-starter-bs4-webpack)](https://github.com/cichy380/html-starter-bs4-webpack/blob/master/LICENSE.md)
+## Getting Started
 
-Kick-start your project with [Bootstrap](https://getbootstrap.com/), the world's most popular framework and modern development workflow.
-This boilerplate with [Webpack](https://webpack.js.org/) based setup helps you build web apps and sites much faster.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Features
+### Prerequisites
 
-* **Live reloading** <br> browser update after changes
-* **Automatically optimizes** entry files <br> concatenate, minify and inject output files to HTML
-* **[Sass](https://sass-lang.com/) for stylesheets** <br> with [the 7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern)
-* **Modern JavaScript** <br> ES6 modules-based code linting by [ESLint](https://eslint.org/)
-* Older **browsers support** 
-  * add vendor prefixes in CSS with [Autoprefixer](https://autoprefixer.github.io/)
-  * convert ES6+ code into a backwards compatible with [Babel](https://babeljs.io/)
-* Includes:
-  * **[Webpack 4](https://webpack.js.org/)** configuration - module bundler
-  * **[Bootstrap 4](http://getbootstrap.com/)** - the most popular HTML, CSS and JS framework
-  * [jQuery](http://jquery.com/) - JavaScript library
-  * [Font Awesome 5](https://fontawesome.com/) - the web's most popular vector icons and social logos
-  * [Google Fonts](https://fonts.google.com/) - libre licensed fonts
-* sourceMaps
-* and more...
+You need [node.js](https://nodejs.org/en/) and [yarn](https://yarnpkg.com/). If you are on a Mac you can install everything with [HomeBrew](https://brew.sh/index_de):
 
-## Theme development
-
-[Node.js](http://nodejs.org/) is the only required dependency to work with *HTML Starter*.
-
-
-#### Installation
-
-1. Install [Node.js](http://nodejs.org/) (installation depends on your system). After finishing, you will be able to 
-check the version number using `node -v` and `npm -v` commands 
-([npm is distributed with Node.js](https://www.npmjs.com/get-npm)).
-2. It is recommended to install the latest version of [Yarn](https://yarnpkg.com/en/docs/install).
-3. Clone the repo using `git clone https://github.com/cichy380/html-starter-bs4-webpack.git` or [download *HTML Starter*](https://github.com/cichy380/html-starter-bs4-webpack/archive/master.zip).
-4. Open folder **html-starter-bs4-webpack** (command: `cd html-starter-bs4-webpack`) and install a packages of *HTML Starter* via command: `yarn` or `npm install`. 
-
-Now you have everything you need to run the build process.
-
-#### Build commands
-
-* `yarn start` or `npm run start` ─ compile assets when file changes are made, start [webpack-dev-server](https://github.com/webpack/webpack-dev-server) session
-* `yarn build` or `npm run build` ─ compile and optimize (the files in your assets directory) for production
-
-## Structure
-
-Shorten directories and files structure which you'll see after build: 
-
-```shell
-html-starter-bs4-webpack/
-├── assets/                 # template assets
-│   ├── fonts/              # place template fonts files here
-│   ├── html/               # template HTML files
-│   │  ├── partials/        # common parts of HTML code
-│   │  │  └── [...]
-│   │  ├── 404.html         # placeholder 404 error page
-│   │  └── index.html       # default HTML skeleton
-│   ├── images/             # template images files
-│   │  └── [...]
-│   ├── scripts/            # template javascript files
-│   │  ├── vendor/          # necessary parts of frameworks and libs
-│   │  │  └── [...]         # Bootstrap, FontAwesome, jQuery
-│   │  └── main.js          # main javascript file that references JS source files
-│   ├── scss/               # template styles
-│   │  ├── [...]            # 7-1 Sass architecture folders
-│   │  └── main.scss        # main Sass file that references scss source files
-│   ├── index.js            # entry point of template
-│   └── [...]               # miscellaneous
-├── dist/                   # output folder with production build (don't edit)
-│   ├── css/                # output styles
-│   ├── images/             # output images
-│   ├── js/                 # output javascripts
-│   ├── index.html          # homepage
-│   └── [...]               # miscellaneous
-├── node_modules/           # Node.js packages (don't edit)
-│   └── [...]
-├── .babelrc                # Babel configuration file
-├── .eslintrc.js            # ESLint configuration file
-├── package.json            # Node.js dependencies and scripts
-├── webpack.config.js       # Webpack configuration file
-├── yarn.lock               # Yarn lock file (don't edit)
-└── [...]                   # other...
+```
+brew install yarn
 ```
 
-## Demo
+### Installing
 
-Sample of *HTML Starter* usage placed in separate branche:
- * [demo branch](https://github.com/cichy380/html-starter-bs4-webpack/tree/demo) ─ simple corporate website
+Clone the repo and change into the root directory on the command line and run:
 
-## License
+```
+yarn install
+```
 
-Code released under the [MIT license](https://github.com/cichy380/html-starter-bs4-webpack/blob/master/LICENSE.md).
+To start the development server run:
+
+```
+yarn start
+```
+
+You can access the page on [localhost:9000](http://localhost:9000).
+
+## Deployment
+
+We are deploying the page on Netlify, so every push on the master branch will trigger a new build.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1e6ad8bf-5169-42d1-97a9-d9bd5df0aa3d/deploy-status)](https://app.netlify.com/sites/nifty-wright-9f8a0a/deploys)
+
+## Built With
+
+* [html-starter-bs-4-webpack](https://github.com/cichy380/html-starter-bs4-webpack) - The boilerplate used.
+* [bootstrap](https://maven.apache.org/) - CSS Framework
+
+## Authors
+
+* **Oliver Meyer** - *Design & Development* - [DoomyCrystal](https://github.com/DoomyCrystal)
+* **Emanuel Imhof** - *Development* - [m43nu](https://github.com/m43nu)

@@ -113,18 +113,18 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /(_redirects)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name]',
-        },
-        exclude: /node_modules/,
-      },
-      {
         test: /(favicon\.ico|site\.webmanifest|browserconfig\.xml|robots\.txt|humans\.txt)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',
+        },
+        exclude: /node_modules/,
+      },
+      {
+        test: /(_redirects)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name]',
         },
         exclude: /node_modules/,
       },
