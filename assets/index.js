@@ -24,3 +24,6 @@ import './robots.txt'
 
 // humans.txt
 import './humans.txt'
+
+import './_redirects'
+import './Stellenangebot.pdf'
