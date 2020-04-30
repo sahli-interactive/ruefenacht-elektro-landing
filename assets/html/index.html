@@ -3,104 +3,120 @@
 <head>
   <meta charset="utf-8">
   <title>Rüfenacht Elektro</title>
-  <meta name="description" content="">
+  <meta name="description" content="Fachgeschäft für Elektroinstallationen und Kommunikationstechnik">
   ${require('./partials/head.html')}
 </head>
 <body class="d-flex flex-column">
 ${require('./partials/browserupgrade.html')}
 
-  ${require('./partials/header.html')}
+${require('./partials/header.html')}
 
-  <main class="flex-grow-1">
-    <div class="container">
-      <div class="row justify-content-center text-center pt-5 pb-2">
-        <div class="col-lg-6">
-          <h1>Wir bauen Neues für Sie</h1>
-          <p class="lead">
-            Zur Zeit sind unsere Bauprojekte nicht nur auf dem Festland, sondern auch online. Wir freuen uns, Sie bald auf unserer neuen Internetpräsenz begrüssen zu dürfen.
-          </p>
+<main class="flex-grow-1">
+  <div class="container">
+    <div class="row justify-content-center text-center pt-5 pb-2">
+      <div class="col-lg-6">
+        <h1>Wir bauen Neues für Sie</h1>
+        <p class="lead">
+          Zur Zeit sind unsere Bauprojekte nicht nur auf dem Festland, sondern auch online. Wir freuen uns, Sie bald auf
+          unserer neuen Internetpräsenz begrüssen zu dürfen.
+        </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center pt-3 pb-5">
+      <div class="col-12 col-md-10 col-lg-8">
+        <form id="js-notification" class="notification" name="notification" method="post" data-netlify="true"
+              action="/">
+          <div class="row">
+            <div class="col-auto pr-0">
+              <label class="input-group-text" for="email">Ihre E-Mail</label>
+            </div>
+            <div class="col pl-0 pr-md-0 flex-grow-1">
+              <input id="email" type="email" name="email" class="form-control" placeholder="max@beispiel.ch" required>
+            </div>
+            <div class="col-md-auto pt-2 pt-md-0 px-md-0">
+              <button type="submit" class="btn btn-primary">Benachrichtige mich</button>
+            </div>
+          </div>
+        </form>
+        <div id="js-notification-success" class="text-center" style="display:none;">
+          <a href="/" class="btn btn-success">
+            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="check"
+                 class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 512 512">
+              <path fill="currentColor"
+                    d="M435.848 83.466L172.804 346.51l-96.652-96.652c-4.686-4.686-12.284-4.686-16.971 0l-28.284 28.284c-4.686 4.686-4.686 12.284 0 16.971l133.421 133.421c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-28.284-28.284c-4.686-4.686-12.284-4.686-16.97 0z"></path>
+            </svg>
+            Sie werden benachrichtigt!
+          </a>
         </div>
       </div>
+    </div>
 
-        <div class="row justify-content-center pt-3 pb-5">
-          <div class="col-12 col-md-10 col-lg-8">
-            <form class="notification" method="post" data-netlify="true">
-              <div class="row">
-                  <div class="col-auto pr-0">
-                    <label class="input-group-text" for="email">Ihre E-Mail</label>
-                  </div>
-                  <div class="col pl-0 pr-md-0 flex-grow-1">
-                    <input id="email" type="email" name ="email" class="form-control" placeholder="max@beispiel.ch">
-                  </div>
-                <div class="col-md-auto pt-2 pt-md-0 px-md-0">
-                  <button type="submit" class="btn btn-primary">Benachrichtige mich</button>
-                </div>
-              </div>
-            </form>
+
+    <p class="text-center pb-3">Wir sind natürlich trotzdem wie gewohnt für Sie da:</p>
+    <div class="row justify-content-md-center align-items-center">
+      <div class="col-6 col-lg-2 py-4">
+        <img class="img-fluid" src="./../images/reto-moesch.jpg" alt="Reto Moesch">
+      </div>
+      <div class="col-6 col-lg-4 order-lg-first text-lg-right">
+        <b>Reto Moesch</b> <br>
+        Inhaber & Geschäftsführer <br>
+        <a href="mailto:reto.moesch@ruefenacht-elektro.ch">reto.moesch@&shy;ruefenacht-elektro.ch</a>
+      </div>
+      <div class="col-6 col-lg-2 py-2">
+        <img class="img-fluid" src="./../images/arber-zeqiri.jpg" alt="Arber Zeqiri">
+      </div>
+      <div class="col-6 col-lg-4">
+        <b>Arber Zeqiri</b> <br>
+        Projektleiter <br>
+        <a href="mailto:arber.zeqiri@ruefenacht-elektro.ch">arber.zeqiri@&shy;ruefenacht-elektro.ch</a>
+      </div>
+    </div>
+
+    <h2 class="text-center pt-3 pb-2">Unsere Dienstleistungen</h2>
+    <div class="row align-items-stretch">
+      <div class="col-md-6 col-lg-4 p-0 pb-4 p-md-1">
+        <div class="service fluid-height">
+          <img class="img-fluid" src="./../images/planung.jpg" alt="Planung">
+          <div class="p-4">
+            <h3>Planung</h3>
+            <p>Planen Sie den Neu- oder Umbau einer Liegenschaft?<br>
+              Wir bieten Ihnen fachgerechte und kostengünstige Lösungen im Bereich aller elektrischen Stark- und
+              Schwachstrominstallationen an und erstellen Planungs- und Submissionsunterlagen nach Ihren Wünschen.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 p-0 pb-4 p-md-1">
+        <div class="service fluid-height">
+          <img class="img-fluid" src="./../images/installation.jpg" alt="Installation">
+          <div class="p-4">
+            <h3>Installation</h3>
+            <p>Wir installieren Qualität und Sicherheit.<br>
+              Elektrische Installationen für Industrie, Gewerbe und Haushalt
+              Telefoninstallationen für alle Ansprüche
+              Schwachstrominstallationen für Tür- und Gegensprechanlagen, EDV-Verkabelungen, Multimedia und vieles mehr.
+            </p>
           </div>
         </div>
 
-
-      <p class="text-center pb-3">Wir sind natürlich trotzdem wie gewohnt für Sie da:</p>
-      <div class="row justify-content-md-center align-items-center">
-        <div class="col-6 col-lg-2 py-4">
-          <img class="img-fluid" src="./../images/reto-moesch.jpg" alt="Reto Moesch">
-        </div>
-        <div class="col-6 col-lg-4 order-lg-first text-lg-right">
-          <b>Reto Moesch</b> <br>
-          Inhaber & Geschäftsführer <br>
-          <a href="mailto:reto.moesch@ruefenacht-elektro.ch">reto.moesch@&shy;ruefenacht-elektro.ch</a>
-        </div>
-        <div class="col-6 col-lg-2 py-2">
-          <img class="img-fluid" src="./../images/arber-zeqiri.jpg" alt="Arber Zeqiri">
-        </div>
-        <div class="col-6 col-lg-4">
-          <b>Arber Zeqiri</b> <br>
-          Projektleiter <br>
-          <a href="mailto:arber.zeqiri@ruefenacht-elektro.ch">arber.zeqiri@&shy;ruefenacht-elektro.ch</a>
-        </div>
       </div>
-
-      <h2 class="text-center pt-3 pb-2">Unsere Dienstleistungen</h2>
-      <div class="row align-items-stretch">
-        <div class="col-md-6 col-lg-4 p-0 pb-4 p-md-1">
-          <div class="service fluid-height">
-            <img class="img-fluid" src="./../images/planung.jpg" alt="Planung">
-            <div class="p-4">
-              <h3>Planung</h3>
-              <p>Planen Sie den Neu- oder Umbau einer Liegenschaft?<br>
-    Wir bieten Ihnen fachgerechte und kostengünstige Lösungen im Bereich aller elektrischen Stark- und Schwachstrominstallationen an und erstellen Planungs- und Submissionsunterlagen nach Ihren Wünschen.</p>
-            </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-4 p-0 pb-4 p-md-1">
-          <div class="service fluid-height">
-            <img class="img-fluid" src="./../images/installation.jpg" alt="Installation">
-            <div class="p-4">
-              <h3>Installation</h3>
-              <p>Wir installieren Qualität und Sicherheit.<br>
-            Elektrische Installationen für Industrie, Gewerbe und Haushalt
-            Telefoninstallationen für alle Ansprüche
-            Schwachstrominstallationen für Tür- und Gegensprechanlagen, EDV-Verkabelungen, Multimedia und vieles mehr.</p>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-6 col-lg-4 p-0 pb-4 p-md-1">
-          <div class="service fluid-height">
-            <img class="img-fluid" src="./../images/lampen.jpg" alt="Lampen">
-            <div class="p-4">
-              <h3>Handel</h3>
-              <p>Wir liefern und installieren Kochherde, Kühlschränke, Geschirrwaschmaschinen, Waschmaschinen, Trockner, etc. aller führenden Hersteller.<br>
-    Unser Lampensortiment kennt (fast) keine Grenzen.</p>
-            </div>
+      <div class="col-md-6 col-lg-4 p-0 pb-4 p-md-1">
+        <div class="service fluid-height">
+          <img class="img-fluid" src="./../images/lampen.jpg" alt="Lampen">
+          <div class="p-4">
+            <h3>Handel</h3>
+            <p>Wir liefern und installieren Kochherde, Kühlschränke, Geschirrwaschmaschinen, Waschmaschinen, Trockner,
+              etc. aller führenden Hersteller.<br>
+              Unser Lampensortiment kennt (fast) keine Grenzen.</p>
           </div>
         </div>
       </div>
     </div>
-  </main>
+  </div>
+</main>
 
-  ${require('./partials/footer.html')}
+${require('./partials/footer.html')}
 
 </body>
 </html>

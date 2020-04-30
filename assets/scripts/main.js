@@ -13,3 +13,14 @@ $('form :input').focus(function () {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
+
+$("#js-notification").submit(function(e) {
+  e.preventDefault();
+
+  let $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    $("#js-notification").fadeOut(() => {
+      $('#js-notification-success').fadeIn()
+    });
+  });
+});
