@@ -1,4 +1,4 @@
-# ruefenach-elektro-landing
+# ruefenacht-elektro-landing
 
 Temporary landing-page for [ruefenacht-elektro.ch](https://www.ruefenacht-elektro.ch/)
 
