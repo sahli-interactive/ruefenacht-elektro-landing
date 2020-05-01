@@ -6,18 +6,19 @@
   <meta name="description" content="">
   ${require('./partials/head.html')}
 </head>
-<body>
-<div class="d-flex flex-column h-100">
+<body class="d-flex flex-column">
+
   ${require('./partials/header.html')}
 
-  <main class="d-flex h-100 align-items-center">
-    <div class="container">
-      <h1>Page Not Found</h1>
-      <p class="lead">Sorry, but the page you were trying to view does not exist.</p>
+  <main class="flex-grow-1">
+    <div class="container py-5">
+      <h1>Seite nicht gefunden</h1>
+      <p class="lead">Äxgüse, die gesuchte Seite existiert nicht (mehr).</p>
+      <a href="/" class="btn btn-outline-primary my-3">Zurück zur Startseite</a>
     </div>
   </main>
 
   ${require('./partials/footer.html')}
-</div>
+
 </body>
 </html>

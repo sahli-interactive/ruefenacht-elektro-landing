@@ -95,7 +95,9 @@ a:hover {
   .btn-primary {
     width: 100%;
   }
+}
 
+@include media-breakpoint-down(sm) {
   .service {
     background: none;
   }
