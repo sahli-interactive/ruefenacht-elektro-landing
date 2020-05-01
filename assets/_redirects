@@ -2,3 +2,9 @@
 
 # Redirect default Netlify subdomain to primary domain
 https://nifty-wright-9f8a0a.netlify.app/* https://www.ruefenacht-elektro.ch/:splat 301!
+
+/standorte.phtml        /
+/info-1.phtml           /
+/kAhlanlagen.phtml      /
+/waermepumpen-1.phtml   /
+/heizungen-1.phtml      /
